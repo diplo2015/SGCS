@@ -96,7 +96,9 @@
       <DependentUpon>GSLA.edmx</DependentUpon>
       <LastGenOutput>GSLA.cs</LastGenOutput>
     </None>
-    <None Include="packages.config" />
+    <None Include="..\SGCS.Presentacion\packages.config">
+      <Link>packages.config</Link>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
