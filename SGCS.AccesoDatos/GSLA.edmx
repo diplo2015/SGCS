@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="GSLAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="CodCliente" />
+          </Key>
+          <Property Name="CodCliente" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Dni" Type="nchar" MaxLength="8" />
+          <Property Name="Cuit" Type="nchar" MaxLength="13" />
+          <Property Name="Nombre" Type="nchar" MaxLength="30" />
+          <Property Name="Apellido" Type="nchar" MaxLength="30" />
+          <Property Name="Direccion" Type="nchar" MaxLength="50" />
+          <Property Name="Telefono" Type="nchar" MaxLength="13" />
+          <Property Name="Usuario" Type="nchar" MaxLength="10" />
+          <Property Name="Pass" Type="nchar" MaxLength="10" />
+          <Property Name="FechaAlta" Type="nchar" MaxLength="10" />
+          <Property Name="FechaModificacion" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityContainer Name="GSLAModelStoreContainer">
+          <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GSLAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="CodCliente" />
+          </Key>
+          <Property Name="CodCliente" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Dni" Type="String" MaxLength="8" FixedLength="true" Unicode="true" />
+          <Property Name="Cuit" Type="String" MaxLength="13" FixedLength="true" Unicode="true" />
+          <Property Name="Nombre" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="Apellido" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Telefono" Type="String" MaxLength="13" FixedLength="true" Unicode="true" />
+          <Property Name="Usuario" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Pass" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FechaAlta" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FechaModificacion" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="GSLAEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GSLAModelStoreContainer" CdmEntityContainer="GSLAEntities">
+          <EntitySetMapping Name="Cliente">
+            <EntityTypeMapping TypeName="GSLAModel.Cliente">
+              <MappingFragment StoreEntitySet="Cliente">
+                <ScalarProperty Name="CodCliente" ColumnName="CodCliente" />
+                <ScalarProperty Name="Dni" ColumnName="Dni" />
+                <ScalarProperty Name="Cuit" ColumnName="Cuit" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+                <ScalarProperty Name="Pass" ColumnName="Pass" />
+                <ScalarProperty Name="FechaAlta" ColumnName="FechaAlta" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
