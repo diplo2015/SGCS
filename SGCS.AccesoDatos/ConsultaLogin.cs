@@ -12,9 +12,10 @@ namespace SGCS.AccesoDatos
     public class ConsultaLogin
     {
         //private IQueryable<Cliente> cliente;
-        public bool consulta(string u, string p) { 
+        public bool consulta(string u, string p)
+        {
 
-            
+
             GSLAEntities clienteContext = new GSLAEntities();
 
 
@@ -23,17 +24,28 @@ namespace SGCS.AccesoDatos
                                      select cli).ToList<Cliente>();
 
 
-            if (cliente.Count == 1) {
+            if (cliente.Count == 1)
+            {
                 return true;
             }
             else
             {
                 return false;
             }
-            
+
         }
-        
-        
+        public bool alta(Cliente cli1)
+        {
+
+
+            GSLAEntities clienteContext = new GSLAEntities();
+
+            clienteContext.Cliente.Add(cli1);
+            clienteContext.SaveChanges();
+            return true;
+
+        }
+
 
     }
 }
