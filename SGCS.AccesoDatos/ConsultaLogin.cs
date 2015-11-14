@@ -15,14 +15,14 @@ namespace SGCS.AccesoDatos
         public Cliente consulta(string u, string p)
         {
 
-
+            
             GSLAEntities clienteContext = new GSLAEntities();
 
 
             List<Cliente> cliente = (from cli in clienteContext.Cliente
                                where cli.Usuario.Equals(u,StringComparison.InvariantCulture)  && 
                                      cli.Pass.Equals(p,StringComparison.InvariantCulture)
-                               select cli).ToList<Cliente>();
+                                     select cli).ToList<Cliente>();
 
 
             if (cliente.Count == 1) {
@@ -32,7 +32,20 @@ namespace SGCS.AccesoDatos
             {
                 return null;
             }
-      
+            
         }
+        public bool alta(Cliente cli1)
+        {
+
+
+            GSLAEntities clienteContext = new GSLAEntities();
+
+            clienteContext.Cliente.Add(cli1);
+            clienteContext.SaveChanges();
+            return true;
+
+        }
+
+
     }
 }

@@ -74,11 +74,27 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AltaCliente.aspx" />
+    <Content Include="Baja Cliente.aspx" />
     <Content Include="login.aspx" />
     <Content Include="panel_usuario.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AltaCliente.aspx.cs">
+      <DependentUpon>AltaCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AltaCliente.aspx.designer.cs">
+      <DependentUpon>AltaCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Baja Cliente.aspx.cs">
+      <DependentUpon>Baja Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Baja Cliente.aspx.designer.cs">
+      <DependentUpon>Baja Cliente.aspx</DependentUpon>
+    </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
