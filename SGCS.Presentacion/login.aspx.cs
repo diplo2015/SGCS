@@ -18,9 +18,17 @@ namespace SGCS.Web
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
             ConsultaLogin con = new ConsultaLogin();
-            bool result = con.consulta(txtUsuario.Text, txtContraseña.Text);
+            Cliente c1 = con.consulta(txtUsuario.Text, txtContraseña.Text);
 
-            if (result) { lblError.Text = "Loggeado"; } else { lblError.Text = "Usuario o contraseña no valido"; }
+            if (c1 != null) 
+            { 
+                Session["cli"] = c1;
+                Response.Redirect(Page.ResolveClientUrl("/panel_usuario.aspx"));
+            } 
+            else 
+            { 
+                lblError.Text = "Usuario o contraseña no valido"; 
+            }
 
         }
     }

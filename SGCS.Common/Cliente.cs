@@ -4,6 +4,7 @@ using System.Text;
 
 namespace SGCS.Common
 {
+    [Serializable]
     public class Cliente
     {
         public string codCliente { get; set; }
