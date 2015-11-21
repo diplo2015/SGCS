@@ -4,8 +4,10 @@ using System.Text;
 
 namespace SGCS.Common
 {
+    [Serializable]
     public class Corredor
     {
+        
         public int codCorredor { get; set; }
         public int cuit { get; set; }
         public string nombre { get; set; }

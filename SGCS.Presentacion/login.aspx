@@ -24,6 +24,9 @@
                 <td>&nbsp;</td><td><asp:Button ID="btnAceptar"  Text="Aceptar" runat="server" OnClick="btnAceptar_Click"/><asp:Button runat="server" Text="Cancelar" ID="btnCancelar"/></td>
             </tr>
             <tr>
+                <td></td><td></td>
+            </tr>
+            <tr>
                 <td colspan="2" ><asp:Label Text="" ID="lblError" runat="server"></asp:Label></td>
             </tr>
         </table>
