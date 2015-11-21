@@ -64,6 +64,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ModificacionCliente.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -101,6 +102,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificacionCliente.aspx.cs">
+      <DependentUpon>ModificacionCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificacionCliente.aspx.designer.cs">
+      <DependentUpon>ModificacionCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="panel_usuario.aspx.cs">
       <DependentUpon>panel_usuario.aspx</DependentUpon>
