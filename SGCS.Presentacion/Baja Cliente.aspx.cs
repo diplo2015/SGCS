@@ -11,7 +11,7 @@ namespace SGCS.Web
     public partial class Baja_Cliente : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        { 
+        {
 
 
         }
@@ -20,11 +20,18 @@ namespace SGCS.Web
         {
 
             ConsultaLogin clogin = new ConsultaLogin();
-            clogin.Eliminar(CodCli.Text);
+            if (clogin.Eliminar(CodCli.Text))
+            {
+                Label1.Text = "Cliente Eliminado";
+            }
+            else
+            {
+                Label1.Text = "No Se encontro el cliente";
+            }
         }
 
         protected void TextBox1_TextChanged(object sender, EventArgs e)
-        { 
+        {
 
         }
     }
