@@ -18,7 +18,7 @@
         <br />
         <br />
 &nbsp;&nbsp; DNI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="Txtdni" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Txtdni" runat="server" OnTextChanged="Txtdni_TextChanged"></asp:TextBox>
         <br />
         <br />
 &nbsp;&nbsp; Nombre:&nbsp;

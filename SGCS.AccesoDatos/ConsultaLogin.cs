@@ -45,7 +45,7 @@ namespace SGCS.AccesoDatos
             return true;
 
         }
-        public Cliente consulta(Cliente cli1, string cod)
+        public Cliente consulta(string cod)
         {
 
 
