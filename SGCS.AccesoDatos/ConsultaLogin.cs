@@ -43,6 +43,23 @@ namespace SGCS.AccesoDatos
 
         }
 
+        public bool Eliminar(string codCli )
+        {
+
+            GSLAEntities clienteContext = new GSLAEntities();
+            Cliente cli = clienteContext.Cliente.Find(codCli);
+            if (cli != null)
+            {
+                clienteContext.Cliente.Remove(cli);
+                clienteContext.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
 
     }
 }
