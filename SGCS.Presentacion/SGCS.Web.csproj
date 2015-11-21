@@ -75,7 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AltaCliente.aspx" />
-    <Content Include="Baja Cliente.aspx" />
+    <Content Include="BajaCliente.aspx" />
     <Content Include="login.aspx" />
     <Content Include="panel_usuario.aspx" />
     <Content Include="Web.config" />
@@ -88,12 +88,12 @@
     <Compile Include="AltaCliente.aspx.designer.cs">
       <DependentUpon>AltaCliente.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Baja Cliente.aspx.cs">
-      <DependentUpon>Baja Cliente.aspx</DependentUpon>
+    <Compile Include="BajaCliente.aspx.cs">
+      <DependentUpon>BajaCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Baja Cliente.aspx.designer.cs">
-      <DependentUpon>Baja Cliente.aspx</DependentUpon>
+    <Compile Include="BajaCliente.aspx.designer.cs">
+      <DependentUpon>BajaCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>

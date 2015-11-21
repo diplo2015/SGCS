@@ -26,5 +26,6 @@ namespace SGCS.AccesoDatos
         }
     
         public DbSet<Cliente> Cliente { get; set; }
+        public DbSet<Seguros> Seguros { get; set; }
     }
 }

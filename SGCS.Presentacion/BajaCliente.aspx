@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Baja Cliente.aspx.cs" Inherits="SGCS.Web.Baja_Cliente" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BajaCliente.aspx.cs" Inherits="SGCS.Web.Baja_Cliente" %>
 
 <!DOCTYPE html>
 

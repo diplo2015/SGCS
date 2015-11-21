@@ -15,7 +15,6 @@ namespace SGCS.AccesoDatos
         public Cliente consulta(string u, string p)
         {
 
-            
             GSLAEntities clienteContext = new GSLAEntities();
 
 
@@ -36,8 +35,6 @@ namespace SGCS.AccesoDatos
         }
         public bool alta(Cliente cli1)
         {
-
-
             GSLAEntities clienteContext = new GSLAEntities();
 
             clienteContext.Cliente.Add(cli1);

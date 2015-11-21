@@ -73,7 +73,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GSLA.edmx</DependentUpon>
     </Compile>
+    <Compile Include="ListaSeguros.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seguros.cs">
+      <DependentUpon>GSLA.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="GSLA.edmx">
