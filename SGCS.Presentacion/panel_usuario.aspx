@@ -13,14 +13,14 @@
         <asp:Label ID="lblUsuario" runat="server"></asp:Label>
         <br />
         <br />
-        <asp:GridView ID="gvListaSeguros" runat="server" AutoGenerateColumns="False" Width="886px" CellPadding="4" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="gvListaSeguros" runat="server" AutoGenerateColumns="False" Width="886px" CellPadding="4" ForeColor="#333333" GridLines="None" >
             <AlternatingRowStyle BackColor="White" />
             <Columns>
-                <asp:BoundField HeaderText="CodSeguro" />
-                <asp:BoundField HeaderText="Nombre" />
-                <asp:BoundField HeaderText="Descripcion" />
-                <asp:BoundField DataFormatString="{0:c}" HeaderText="Precio" />
-                <asp:CheckBoxField HeaderText="Habilitado" />
+                <asp:BoundField HeaderText="CodSeguro" DataField="CodSeguro" Visible="False" />
+                <asp:BoundField HeaderText="Nombre" DataField="Nombre" />
+                <asp:BoundField HeaderText="Descripcion" DataField="Descripcion" />
+                <asp:BoundField HeaderText="Precio" DataFormatString="{0:c}" DataField="Precio" />
+                <asp:CheckBoxField HeaderText="Habilitado" DataField="Habilitado" Visible="False" />
                 <asp:CommandField ButtonType="Button" ShowSelectButton="True" />
             </Columns>
             <EditRowStyle BackColor="#2461BF" />
@@ -34,6 +34,13 @@
             <SortedDescendingCellStyle BackColor="#E9EBEF" />
             <SortedDescendingHeaderStyle BackColor="#4870BE" />
         </asp:GridView>
+        <br />
+        <br />
+        <asp:Label ID="lblContinuar" runat="server" Text="Ha seleccionado {0}. Haga click en Siguiente para continuar." Visible="False"></asp:Label>
+        <br />
+        <br />
+        <asp:Button ID="btnContinuar" runat="server" Text="Siguiente" Visible="False" />
+        <br />
         <br />
     </div>
     </form>

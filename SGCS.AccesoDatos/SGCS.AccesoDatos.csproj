@@ -73,6 +73,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GSLA.edmx</DependentUpon>
     </Compile>
+    <Compile Include="ListaClientes.cs" />
     <Compile Include="ListaSeguros.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seguros.cs">

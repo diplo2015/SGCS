@@ -21,7 +21,6 @@ namespace SGCS.Web
             gvListaSeguros.DataSource = listaSeguros.getLista();
             gvListaSeguros.DataBind();
 
-
             c1 = (Cliente)Session["cli"];
             if (c1 == null)
             {
@@ -41,9 +40,13 @@ namespace SGCS.Web
                     s1.CodSeguro = gvListaSeguros.SelectedRow.Cells[0].Text;
                     s1.Nombre = gvListaSeguros.SelectedRow.Cells[1].Text;
                     s1.Descripcion = gvListaSeguros.SelectedRow.Cells[2].Text;
-                    s1.Precio = float.Parse(gvListaSeguros.SelectedRow.Cells[3].Text);
+                    s1.Precio = float.Parse(gvListaSeguros.SelectedRow.Cells[3].Text.Replace("$",String.Empty));
                     s1.Habilitado = ((CheckBox)gvListaSeguros.SelectedRow.Cells[4].Controls[0]).Checked;
                     Session["se"] = s1;
+
+                    lblContinuar.Text = String.Format("Ha seleccionado {0}. Haga click en Siguiente para continuar.", s1.Nombre);
+                    lblContinuar.Visible = true;
+                    btnContinuar.Visible = true;
                 }
             }
 

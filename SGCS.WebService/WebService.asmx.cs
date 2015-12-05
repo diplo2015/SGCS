@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SGCS.AccesoDatos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,9 +19,18 @@ namespace SGCS.WebService
     {
 
         [WebMethod]
-        public string HelloWorld()
+        public List<Seguros> ListaSeguros()
         {
-            return "Hola a todos";
+            AccesoDatos.ListaSeguros ls = new ListaSeguros();
+            return ls.getLista();
+        }
+
+        
+        [WebMethod]
+        public List<Cliente> ListaClientes()
+        {
+            AccesoDatos.ListaClientes lc = new ListaClientes();
+            return lc.getClientes();
         }
     }
 }

@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -76,9 +77,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SGCS.Common\SGCS.Common.csproj">
-      <Project>{78dd8520-6bb7-4fca-8273-b0d9f37878ea}</Project>
-      <Name>SGCS.Common</Name>
+    <ProjectReference Include="..\SGCS.AccesoDatos\SGCS.AccesoDatos.csproj">
+      <Project>{c537ff73-0733-4a7d-8dbd-8db14f4860af}</Project>
+      <Name>SGCS.AccesoDatos</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
