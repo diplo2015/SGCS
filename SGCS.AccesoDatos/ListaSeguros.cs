@@ -20,6 +20,4 @@ namespace SGCS.AccesoDatos
             return seguros;
         }
     }
-
-
 }
