@@ -64,6 +64,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AltaSeguro.aspx" />
+    <Content Include="ModificacionCliente.aspx" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Publicador.pubxml" />
     <None Include="Web.Debug.config">
@@ -89,6 +91,13 @@
     <Compile Include="AltaCliente.aspx.designer.cs">
       <DependentUpon>AltaCliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AltaSeguro.aspx.cs">
+      <DependentUpon>AltaSeguro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AltaSeguro.aspx.designer.cs">
+      <DependentUpon>AltaSeguro.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BajaCliente.aspx.cs">
       <DependentUpon>BajaCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -102,6 +111,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificacionCliente.aspx.cs">
+      <DependentUpon>ModificacionCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificacionCliente.aspx.designer.cs">
+      <DependentUpon>ModificacionCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="panel_usuario.aspx.cs">
       <DependentUpon>panel_usuario.aspx</DependentUpon>
